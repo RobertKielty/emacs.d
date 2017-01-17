@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: ReactComponent
+# key: rc
+# --
+import React, { Component } from 'react';
+import SettingsTable from './SettingsTable.js';
+import './Settings.css';
+
+class Settings extends Component {
+    constructor(...args) {
+	super(...args);
+
+	this.state = {
+	    filterText: '',
+	    data: {
+		"client-type":"mobile",
+		"region":"us-west",
+		"last-updated":"just now",
+	    }
+	};
+    }
+
+}

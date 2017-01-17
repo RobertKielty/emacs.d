@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: ReactComponent
+# key: rc.
+# --
+import React, { Component } from 'react';
+import './$1.css';
+
+class $1 extends Component {
+    constructor(...props) {
+	super(...props);
+
+	this.state = {
+	$0
+	};
+    }
+    render() {
+	return(
+		<div className="$1">
+		</div>
+	)
+    }   
+}
