@@ -21,8 +21,11 @@
 (package-initialize)
 
 (show-paren-mode 1)
-;; web-mode
 
+(require 'powerline)
+(powerline-default-theme)
+
+;; web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
