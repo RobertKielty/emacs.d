@@ -32,6 +32,8 @@
         (if (equal web-mode-content-type "javascript")
             (web-mode-set-content-type "jsx")
           (message "now set to: %s" web-mode-content-type))))
+(add-hook 'web-mode-hook
+      (lambda ()(tern-mode t)))
 
 (defvar web-mode-content-type)
 (setq web-mode-ac-sources-alist
@@ -63,9 +65,10 @@
 ;; disable json-jsonlist checking for json files
 (setq-default flycheck-disabled-checkers
   (append flycheck-disabled-checkers
-    '(json-jsonlist)))
-;; tern
+	  '(json-jsonlist)))
 (add-to-list 'load-path "~/.emacs.d/packages/")
+;; tern
+(add-to-list 'load-path "~/.emacs.d/packages/tern/")
 (autoload 'tern-mode "tern.el" nil t)
 
 ;; Customizations that were placed in ~/.emacs
