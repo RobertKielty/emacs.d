@@ -82,7 +82,7 @@
  '(custom-enabled-themes (quote (deeper-blue)))
  '(package-selected-packages
    (quote
-    (auto-complete charmap circe circe-notifications groovy-mode hackernews multiple-cursors yasnippet web-mode paredit orgtbl-show-header orgit org-tree-slide markdown-preview-mode json-mode js2-mode flycheck exec-path-from-shell dockerfile-mode company-web company-tern))))
+    (powerline tern-auto-complete tern-context-coloring vagrant auto-complete charmap circe circe-notifications groovy-mode hackernews multiple-cursors yasnippet web-mode paredit orgtbl-show-header orgit org-tree-slide markdown-preview-mode json-mode js2-mode flycheck exec-path-from-shell dockerfile-mode company-web company-tern))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
